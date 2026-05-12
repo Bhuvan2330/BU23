@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header>
+      <h1>Vendor Portal Login</h1>
+      <p>Use your vendor account to access enquiries, meetings, and onboarding tasks.</p>
+    </header>
+    <main>
+      <form id="loginForm" class="login-form" onsubmit="return login('vendor')">
+        <label>Email</label>
+        <input type="email" id="email" required placeholder="vendor@example.com">
+        <label>Password</label>
+        <input type="password" id="password" required placeholder="vendor123">
+        <button type="submit">Log in as Vendor</button>
+        <p class="form-note">Demo credentials: vendor@example.com / vendor123</p>
+        <p id="errorMessage" class="error-message"></p>
+      </form>
+      <p><a href="index.html">Back to role selection</a></p>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
